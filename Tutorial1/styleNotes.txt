@@ -1,0 +1,83 @@
+Style Notes
+
+-----------------------------------------------------------------------------------------------------
+
+Selectors
+
+There are three types of selectors used to apply styles to things.
+They are:
+Element selectors
+Class selectors
+ID selectors
+
+
+Element Selectors,
+are used to apply the same style to all elements that are defined.
+As an example:
+p{
+    color: red;
+}
+Will turn all paragraph elements on the page to the red colour.
+This works with any type of element.
+
+
+Class Selectors,
+create a group with a uniform style that can then be applied to other elements.
+This means that if you want certain paragraphs or lists to look a certain way, a class can be
+created and then applied to those individual elements as needed.
+For example,
+HTML
+class = "about-list-item"
+CSS
+.about-list-item{
+    font-style: italic;
+}
+
+
+ID Selectors,
+are used to style things that are generally a one off occurence. It acts in a similar way to class
+selectors although on a smaller scale. Something specific on the page can be given an ID and this ID
+will have the style applied to it rather than creating a new class.
+For example,
+HTML
+id = "my-name"
+is an attribute applied a heading that states the User's name.
+CSS
+#my-name{
+    color: blue;
+}
+
+Note that when reffering to a class in CSS, a "." is used and when reffering to an ID, "#" is used.
+
+-----------------------------------------------------------------------------------------------------
+
+Grids
+
+Grids can be applied using CSS to better structure the information on the page.
+One of the easiest ways to do this is the following:
+CSS
+.grid-table {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+}
+The code shown above will create a grid that is 3 sections long and 2 sections tall.
+As the size has been defined as "auto" they will automatically size to be even depending on the screen.
+
+However, if the site is opened on mobile, it may not be an ideal layout 
+as the screens are tall not wide...
+
+To fix this issue, other code can come into effect when triggered by a certain event.
+For example,
+CSS
+@media (max-width: 600px) {
+    .grid-table{
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: auto;
+    }
+}
+
+This alters the above class from a grid of 3x2 (making 6 boxes) into 1x6 and it will only
+trigger once the browser size shrinks below a max width of 600 pixels.
+
+-----------------------------------------------------------------------------------------------------

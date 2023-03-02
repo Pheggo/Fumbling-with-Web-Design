@@ -1,0 +1,72 @@
+Structure
+<!DOCTYPE html> this informs the computer what kind of file it is and how to read it.
+
+<html> Is all the code that is to be read.
+
+<head> Is metadata about the page. This information will dictate how the page acts but not what
+actually appears on the page. An example of this would be <title> which will appear as the title
+of the page in the web tab but not appear on the actual page.
+
+<body> All the content that is displayed on the page is put into the body. This includes all text,
+images, form items etc.
+
+-----------------------------------------------------------------------------------------------------
+HTML Elements and Attributes
+
+Elements
+Elements are just names that components are given.
+For example, <h1> means heading one. This makes the text larger and bold because it is a heading.
+The braces <> create an opening brace and </> is a closing brace for that element.
+<p> is for paragraph. This is for normal text.
+
+Attributes
+Elements can also be given attributes to change their behaviour.
+As an example, <textarea> will create a box on the page that can be typed into.
+Now an attribute can be added ot the text area by putting them into the element tag.
+For example, <textarea rows = "40"> will create a text box that is 40 lines long
+rather than the default 3 lines before needing to scroll.
+
+Unordered List
+Another type of element is the Unordered List <ul>.
+This will make a bullet point list full of List Items <li>.
+These will be listed in the order they are written and each <li> will have its own dot point.
+
+Ordered List
+There is also an Ordered List <ol>.
+This is essentially the same as a <ul> except that each point is now numbered
+rather than being a dot point.
+
+Anchor
+The Anchor Tag <a>, when used in conjunction with the attribute "href" is used as a method for
+embedding links into a page. As an example:
+<a href = "http://google.com">Click here to find cat memes!</a>
+Will display the text: "Click here to find cat memes!"
+as a hyper link that will take the user to the site defined in the href attribute.
+
+-----------------------------------------------------------------------------------------------------
+Divs and Spans
+
+Divs and Spans are ways to group information or manipulate their appearence.
+A Div is particularly useful when trying to style an entire paragraph. Furthermore,
+when 2 seperate Divs are next to one another, each will be given a new line.
+A Span on the other hand, is more useful when trying to style individual words on the same line.
+Two sperate spans next to one another will be displayed side-by-side rather than given
+different lines.
+The Styling for Divs and Spans can be applied through attributes.
+
+-----------------------------------------------------------------------------------------------------
+Form Elements
+These types of elements are used by the end user to convey information into the site.
+One such example was the <textarea> that was mentioned above, although there are many others.
+Some such examples include <button> which creates a button on the page that can be clicked and
+<select> which can be filled with <option>'s to create a drop down selection box.
+
+-----------------------------------------------------------------------------------------------------
+Images
+An image can be added using and <img> tag. each image needs a source or else it will not display.
+These images can be drawn from the internet using its hyperlink. The hyper link is added to the
+<img> element as an attribute. This looks like:
+<img src = "https://pbs.twimg.com/media/DlNfpdtXcAARCgy?format=jpg&name=900x900" />
+As seen above, this element does not need a second set of braces to close.
+
+-----------------------------------------------------------------------------------------------------
